@@ -10,3 +10,9 @@ encodedStr = str(encodedBytes, "utf-8")
 
 print(encodedStr)
 
+Sttr = input("encoded message here :")
+
+decodedBytes = base64.b64decode(Sttr)
+decodedStr = str(decodedBytes, "utf-8")
+
+print(Sttr)   
