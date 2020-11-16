@@ -8,8 +8,8 @@ if sys.argv[2] == 'en':
   print(encoded)
 
 elif sys.argv[2] == 'de':
-  data = base64.b64decode(sys.argv[1])
-  print(data)
+  decoded = base64.b64decode(sys.argv[1])
+  print(decoded)
 
 elif sys.argv[2] == 'credit':
   print('script made by whitepaperkat')
