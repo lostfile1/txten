@@ -1,18 +1,16 @@
 import base64
+import sys
 
-print("txtend v1.0")
-print("this is a basic txt encoder made in python")
 
-foo = input("type your message:")
+foo = sys.argv[1]
+goo = sys.argv[2]
 
-encodedBytes = base64.b64encode(foo.encode("utf-8"))
-encodedStr = str(encodedBytes, "utf-8")
+if goo == 'en':
+  encodedBytes = base64.b64encode(foo.encode("utf-8"))
+  encodedStr = str(encodedBytes, "utf-8")
+  print(encodedStr)
 
-print(encodedStr)
-
-Sttr = input("encoded message here :")
-
-decodedBytes = base64.b64decode(Sttr)
-decodedStr = str(decodedBytes, "utf-8")
-
-print(decodedStr)   
+elif goo == 'de':
+  decodedBytes = base64.b64decode(Sttr)
+  decodedStr = str(decodedBytes, "utf-8")
+  print(decodedStr)   
