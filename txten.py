@@ -14,5 +14,3 @@ elif sys.argv[2] == 'de':
 elif sys.argv[2] == 'credit':
   print('script made by whitepaperkat')
   print('donate : bc1qyvrvxygaw4dqmwu3sg0gsl79uwyh6u2p99vcr2\n')
-else:
-  print('im sorry but i cant do that dave')
