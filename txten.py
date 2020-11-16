@@ -10,6 +10,6 @@ if sys.argv[2] == 'en':
   print(encodedStr)
 
 elif sys.argv[2] == 'dc':
-  decodedBytes = base64.b64decode(Sttr)
+  decodedBytes = base64.b64decode(sys.argv[1])
   decodedStr = str(decodedBytes, "utf-8")
   print(decodedStr)   
