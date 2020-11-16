@@ -1,10 +1,18 @@
-import base64
-import sys
 import os
-data = sys.argv[1]
+import sys
+import base64
 
-# Standard Base64 Encoding
-encodedBytes = base64.b64encode(data.encode("utf-8"))
-encodedStr = str(encodedBytes, "utf-8")
 
-print(encodedStr)
+if sys.argv[2] == 'en':
+  encoded = base64.b64encode(sys.argv[1])
+  print(encoded)
+
+elif sys.argv[2] == 'de':
+  data = base64.b64decode(sys.argv[1])
+  print(data)
+
+elif sys.argv[2] == 'credit':
+  print('script made by whitepaperkat')
+  print('donate : bc1qyvrvxygaw4dqmwu3sg0gsl79uwyh6u2p99vcr2\n')
+else:
+  print('im sorry but i cant do that dave')
