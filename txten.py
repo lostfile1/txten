@@ -2,12 +2,11 @@ import base64
 import sys
 
 if sys.argv[2] == "en":
-  pu = sys.argv[1].encode("ascii")
-  data = base64.b64encode(pu)
+  data = base64.b64encode(sys.argv[1].encode("ascii"))
   print(data)
- elif sys.argv[2] == "dc":
-   pu = sys.argv[1].decode("ascii")
-   data = base64.b64decode(pu)
+  
+  if sys.argv[2] == "dc": 
+   data = base64.b64decode(sys.argv[1].decode("ascii"))
    print(data)
 
 
