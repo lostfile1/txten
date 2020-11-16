@@ -10,7 +10,7 @@ if goo == 'en':
   encodedStr = str(encodedBytes, "utf-8")
   print(encodedStr)
 
-elif goo == 'de':
+elif goo == 'dc':
   decodedBytes = base64.b64decode(Sttr)
   decodedStr = str(decodedBytes, "utf-8")
   print(decodedStr)   
