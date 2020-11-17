@@ -3,3 +3,7 @@
 - it encodes user txt
 - also decodes it
 - could be used for encoding passwords but why would you want to :D
+
+## usage
+
+python txten.py 'message here' en/dc
