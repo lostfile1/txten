@@ -4,12 +4,10 @@ import base64
 
 
 if sys.argv[2] == 'en':
-  encoded = base64.b64encode(sys.argv[1])
-  print(encoded)
+  print(base64.b64encode(sys.argv[1]))
 
-elif sys.argv[2] == 'de':
-  decoded = base64.b64decode(sys.argv[1])
-  print(decoded)
+elif sys.argv[2] == 'de': 
+  print(base64.b64decode(sys.argv[1]))
 
 elif sys.argv[2] == 'credit':
   print('script made by whitepaperkat')
