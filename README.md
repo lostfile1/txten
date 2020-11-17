@@ -6,4 +6,4 @@
 
 ## usage
 
-python txten.py 'message here' en/dc
+python txten.py 'message here' en/de
