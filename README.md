@@ -2,6 +2,7 @@
 
 - it encodes user txt
 - also decodes it
+- so easy a script kiddie could figure it out
 - could be used for encoding passwords but why would you want to :D
 
 ## usage
